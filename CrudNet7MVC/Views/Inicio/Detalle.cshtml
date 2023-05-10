@@ -1,0 +1,26 @@
+﻿@model CrudNet7MVC.Models.Contacto
+
+@{
+    ViewData["Title"] = "Detalle del Contactos";
+}
+
+<h1 class="text-center">Contactos</h1>
+
+<div class="row">
+    <div class="offset-12">
+        <div class="card border">
+            <div class="card-header bg-dark">
+                <h3 class="text-white"><strong> Detalle del Usuario </strong></h3>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item"><stron>Nombre: </stron>@Html.DisplayFor(m => m.Nombre)</li>
+                    <li class="list-group-item"><stron>Nombre: </stron>@Html.DisplayFor(m => m.Telefono)</li>
+                    <li class="list-group-item"><stron>Nombre: </stron>@Html.DisplayFor(m => m.Celular)</li>
+                    <li class="list-group-item"><stron>Nombre: </stron>@Html.DisplayFor(m => m.Email)</li>
+                </ul>
+                <a asp-controller="Inicio" asp-action="index" class="btn btn-primary mt-3"><i class="bi bi-backspace-fill"></i> Volver</a>
+            </div>
+        </div>
+    </div>
+</div>
